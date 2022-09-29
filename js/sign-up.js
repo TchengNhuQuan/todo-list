@@ -13,6 +13,11 @@ form.addEventListener('submit', e => {
     listEmailArray.push(emailValue);
     localStorage.setItem("email", JSON.stringify(listEmailArray));
 
+    let usernameValue = username.value;
+    listUserNameArray = [];
+    listUserNameArray.push(usernameValue);
+    localStorage.setItem("username", JSON.stringify(listUserNameArray));
+
     let passwordValue = password.value;
     listPasswordArray = [];
     listPasswordArray.push(passwordValue);
